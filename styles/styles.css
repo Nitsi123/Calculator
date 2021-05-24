@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEFBFB;
+    height: 100%;
+}
+
+.container{
+    width: 30vw;
+    height: 90vh;
+    background-color: #12232E; 
+    margin: 5vh auto;
+    color: #12232E;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6 , 1fr);
+    border: 5px #12232E solid;
+    grid-gap: 3px;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+}
+
+.result{
+    background-color: #EEFBFB;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-size: 7vh;
+    font-family: Roboto;
+    padding-right: 5px;
+    overflow-wrap: break-word;
+    flex-wrap: nowrap;
+    border: 2px solid rgb(243, 57, 57);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.button{
+    width: auto;
+    height: auto;
+    background-color: #217C7E;
+    color: #EEFBFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #095a5c;
+    cursor: pointer;
+}
+
+.clear{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #ff8d8d;
+}
+
+.clear:hover{
+    background-color: #ff6b6b;
+}
+
+.delete{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: #60adf5;
+}
+
+.delete:hover{
+    background-color: #1880e2;
+}
+.operator{
+    background-color: rgb(236, 175, 83);
+}
+
+.operator:hover{
+    background-color: rgb(241, 167, 55);
+}
